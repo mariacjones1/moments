@@ -63,7 +63,7 @@ export const CurrentUserProvider = ({ children }) => {
                 }
                 return axios(err.config);
             }
-            return Promise.rejecdt(err);
+            return Promise.reject(err);
         }
     );
   }, [history]);
